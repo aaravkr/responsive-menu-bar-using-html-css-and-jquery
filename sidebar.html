@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="sidebar.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    </head>
+<body>
+   
+      <i class="fa fa-bars fa-2x toggle_menu "></i>  
+        
+        <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+            <div > 
+            <h1 class="boxed_item"> Aarav <span class="logo_bold">kumar</span></h1>
+                <h2 class="logo_title">Professional Web  Developer</h2>
+            </div>
+        
+   
+      
+            
+         <ul class="navigation_selection">
+        <li> <a href="#about">  about</a></li>
+           <li> <a href="#youtube"> youtube</a></li>
+           <li> <a href="#mentoring">  mentoring</a></li>
+           <li> <a href="#article">  article</a></li>
+           <li> <a href="#vine">  vine</a></li>
+           <li> <a href="#design">  design</a></li>
+           <li> <a href="#notes">  notes</a></li>
+           <li> <a href="#contact">  contact</a></li>
+        
+        </ul>
+           
+      
+        </div>
+       
+       <script>
+    $(document).ready(function(){
+       $(".fa-times").click(function(){
+        $(".sidebar_menu").addClass("hide_menu");
+           $(".toggle_menu").addClass("opacity_one")
+           
+       });
+        
+        $(".toggle_menu").click(function(){
+        $(".sidebar_menu").removeClass("hide_menu");
+           $(".toggle_menu").removeClass("opacity_one");
+           
+       });
+        
+    });
+    
+    
+    </script>
+   
+    </body>
+</html>
